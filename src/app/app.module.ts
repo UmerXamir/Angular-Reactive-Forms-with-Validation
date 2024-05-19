@@ -7,18 +7,24 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { FormArrayComponent } from './form-array/form-array.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentRegistrationComponent
+    StudentRegistrationComponent,
+    FormArrayComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
   ],
   providers: [],
   bootstrap: [AppComponent]

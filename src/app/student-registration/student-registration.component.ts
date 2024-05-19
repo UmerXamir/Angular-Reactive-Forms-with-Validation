@@ -90,6 +90,10 @@ export class StudentRegistrationComponent implements OnInit, AfterViewInit{
   private markAllAsTouched() {
     this.registrationForm.markAllAsTouched();
   }
+
+  clearForm() {
+    this.registrationForm.reset();
+  }
  
 }
  
